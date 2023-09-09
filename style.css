@@ -1,0 +1,41 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    color: #FAFAFA;
+}
+
+body  {
+    background-color: #13131A;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 504px;
+    margin: 58px auto 0px;
+}
+
+.container img {
+    margin-bottom: 8rem;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#welcome p {
+    margin-bottom: 56px;
+}
+
+#welcome input {
+    height: 50px;
+    background-color: #1E1E29;
+    color: #7F7F98;
+    font-size: 16px;
+    padding: 0px 20px;
+    border: none;
+}
