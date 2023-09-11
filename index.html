@@ -21,7 +21,7 @@
         <div id="container">
             <form id="card">
                 <div id="actions">
-                    <button>
+                    <button id="btn-dash">
                         <img src="./Assets/Tipo=Simbolo.svg" alt="">
                     </button>
                     <input type="text" id="card-text" placeholder="Buscar Local">
@@ -29,20 +29,20 @@
                 <div class="Today">
                     <div id="info-today">
                         <div>
-                            <h2 id="city">Sao paulo,SP</h2>
+                            <h2 id="city"></h2>
                             <p id="date" style="color: #7F7F98;">Segunda-feira, 15 de maio de 2023</p>
                         </div>
                         <h4 id="time">21:32</h4>
                     </div>
                     <div id="Weather">
-                        <h1 id="temp">32ºc</h1>
+                        <h1 id="temp"></h1>
                         <div id="detail">
-                            <h5 id="temp-detail">32ºc / 34ºc</h5>
-                            <p id="clima">Nublado</p>
+                            <h5 id="temp-detail"></h5>
+                            <p id="clima"></p>
                         </div>
                     </div>
                     <div id="icons">
-                        <img src=" https://openweathermap.org/img/wn/10n@2x.png" alt="">
+                        <img id="openWeatherIcon" src=" https://openweathermap.org/img/wn/10n@2x.png" alt="">
                     </div>
                 </div>
             </form>
@@ -51,19 +51,19 @@
                     <p>Detalhes do Clima Hoje</p>
                     <ul id="detail-icon">
                         <li>
-                            <i class="ph ph-thermometer"><p>Sensação Térmica</p></i><h4>25 c</h4>
+                            <i class="ph ph-thermometer"><p>Sensação Térmica</p></i><h4 id="feels-like">25 c</h4>
                         </li>
                         <li>
-                            <i class="ph ph-cloud-rain"><p>Probabilidade de Chuva</p></i><h4>0%</h4>
+                            <i class="ph ph-cloud-rain"><p>Probabilidade de Chuva</p></i><h4 id="pop">0%</h4>
                         </li>
                         <li>
-                            <i class="ph ph-wind"><p>Velocidade do Vento</p></i><h4>8 km/h</h4>
+                            <i class="ph ph-wind"><p>Velocidade do Vento</p></i><h4 id="speed">8 km/h</h4>
                         </li>
                         <li>
-                            <i class="ph ph-drop"><p>Umidade do Ar</p></i><h4>40%</h4>
+                            <i class="ph ph-drop"><p>Umidade do Ar</p></i><h4 id="humidity">40%</h4>
                         </li>
                         <li>
-                            <i class="ph ph-sun"><p>índice de UV</p></i><h4>5</h4>
+                            <i class="ph ph-sun"><p>índice de UV</p></i><h4 id="uv">5</h4>
                         </li>
                     </ul>
                 </form>

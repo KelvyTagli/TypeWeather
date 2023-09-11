@@ -91,6 +91,7 @@ body  {
     flex: 1 0 0; 
     background-color: #1E1E29;
     color: #BFBFD4;
+    border-radius: 8px;
     border: 1px solid #7F7F98;
     outline: none;
 }
