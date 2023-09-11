@@ -45,6 +45,10 @@ body  {
     border-radius: 8px;
 }
 
+.hide {
+    display: none;
+}
+
 .dash {
     padding: 24px 24px;
 }
