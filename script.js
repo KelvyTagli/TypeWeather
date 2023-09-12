@@ -1,10 +1,10 @@
 const keyApi = 'fc62a6fd808153935c7f296d7d6c810d';
+const background = document.querySelector('.Today');
 const weatherInput = document.querySelector('#my-input');
 const dash = document.querySelector('.hide');
 const container = document.querySelector('.container');
 const dashInput = document.querySelector('#card-text');
 const button = document.querySelector('#btn-dash');
-const timeZoneApiKey = 'e3b1fc8a9a784de8b0159b3dff85ee21'
 //dash detail
 const city = document.querySelector('#city');
 const date = document.querySelector('#date');
@@ -60,9 +60,8 @@ const responseApi = async (city) => {
             const data =  await response.json();
             showDetail(data);
             responseForecast(data);
-            console.log(data);
-            const TimeZoneData = await getTimeZoneData(data);
-            displayTimeZone(TimeZoneData);
+            const timeZoneData = await getTimeZoneData(data);
+            displayTimeZone(timeZoneData);
         }
     } catch (ex) {
         console.log(`Erro ${ex}`);
@@ -79,8 +78,7 @@ const getTimeZoneData = async (dados) => {
         const response = await fetch(timeZoneApi);
         if(response.ok) {
             const data = await response.json();
-            console.log(data);
-            displayTimeZone(data);
+            return data;
         }
     } catch (error) {
         console.error('Deu erro bigode');
@@ -112,7 +110,6 @@ const responseForecast =  async(data) => {
 
 const showDetail = (data) => {
     const dados = data;
-    
     city.innerText = dados.name +','+ dados.sys.country;
     temp.innerText = parseInt(dados.main.temp) + 'ºC';
     temp_detail.innerText = parseInt(dados.main.temp_max) + 'ºC' + ' / ' + parseInt(dados.main.temp_min) + 'ºC';
