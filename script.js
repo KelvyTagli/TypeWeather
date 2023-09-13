@@ -1,5 +1,4 @@
 const keyApi = 'fc62a6fd808153935c7f296d7d6c810d';
-const background = document.querySelector('.Today');
 const weatherInput = document.querySelector('#my-input');
 const dash = document.querySelector('.hide');
 const container = document.querySelector('.container');

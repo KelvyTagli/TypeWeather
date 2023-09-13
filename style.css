@@ -100,7 +100,7 @@ body  {
     width: 100%;
     border-radius: 12px;
     border: 1px solid #1E1E29;
-    background: url(./Assets/Weather=Cloudy\,\ Moment=Day.png) no-repeat top center / cover;
+    background: url(./Assets/Weather=Clear\,\ Moment=Night.png) no-repeat top center / cover;
 }
 
 #info-today {
