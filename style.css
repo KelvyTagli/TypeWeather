@@ -158,7 +158,6 @@ body  {
     display: flex;
     padding: 28px 24px 8px 24px;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: flex-start;
     flex-shrink: 0; 
     border-radius: 12px; 
@@ -190,7 +189,6 @@ body  {
     display: flex;
     padding: 28px 24px 24px 24px;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: flex-start;
     gap: 12px;
     border-radius: 12px; 
@@ -200,14 +198,32 @@ body  {
 #detail-next-day {
     list-style: none;
     display: flex;
-    margin-left: 2rem;
 }
 
-#detail-next-day li {
+@media screen and (min-width:410px) and (max-width:790px) {
+
+   .container {
+    padding: 10px;
+   }
+
+   #container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+   }
+
+   #icons {
+    display: none;
+   }
+
+   #detail-icon h4 {
+    margin-left: 185px;
+   }
+
+   #detail-next-day {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    flex: 1 0 0;
-    align-self: stretch; 
+    gap: 20px;
+   }
 }
