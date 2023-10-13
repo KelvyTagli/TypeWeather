@@ -196,6 +196,7 @@ body  {
 }
 
 #detail-next-day {
+    height: 100%;
     list-style: none;
     display: flex;
 }
@@ -210,20 +211,40 @@ body  {
     display: flex;
     flex-direction: column;
    }
+   .Today {
+    height: 65vh;
+   }
 
-   #icons {
-    display: none;
+   #Weather h1 {
+    margin: -30vw 0px 10px 0px;
+   }
+
+   #detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: -20px 0px;
    }
 
    #detail-icon h4 {
     margin-left: 185px;
    }
 
+   #next-day {
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+   }
+
    #detail-next-day {
+    box-sizing: border-box;
+    height: auto;
+    justify-content: center;
     list-style: none;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     gap: 20px;
    }
 }
