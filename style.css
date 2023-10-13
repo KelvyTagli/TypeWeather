@@ -97,7 +97,7 @@ body  {
 }
 
 .Today {
-    width: 100vh;
+    width: 100%;
     border-radius: 12px;
     border: 1px solid #1E1E29;
     background: url(./Assets/Weather=Clear\,\ Moment=Night.png) no-repeat top center / cover;
@@ -212,8 +212,8 @@ body  {
     flex-direction: column;
    }
    .Today {
-    width: 70vh;
-    height: 80vh;
+    width: 100%;
+    height: 90vh;
    }
 
    #Weather h1 {
@@ -225,16 +225,12 @@ body  {
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin: -10px 0px;
+    margin: -10px -20px;
    }
 
    #icons {
-    margin: -6cm 7cm;
+    display: none;
    }
-
-    #icons img {
-    width: 30vh;
-    }
 
    #detail-icon h4 {
     margin-left: 185px;
